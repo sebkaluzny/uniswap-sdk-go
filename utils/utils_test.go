@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/miraclesu/uniswap-sdk-go/constants"
+	"github.com/sebkaluzny/uniswap-sdk-go/constants"
 )
 
 func TestValidateAndParseAddress(t *testing.T) {

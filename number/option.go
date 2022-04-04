@@ -3,7 +3,7 @@ package number
 import (
 	"bytes"
 
-	"github.com/miraclesu/uniswap-sdk-go/constants"
+	"github.com/sebkaluzny/uniswap-sdk-go/constants"
 )
 
 type (

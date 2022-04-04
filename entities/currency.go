@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/miraclesu/uniswap-sdk-go/constants"
-	"github.com/miraclesu/uniswap-sdk-go/utils"
+	"github.com/sebkaluzny/uniswap-sdk-go/constants"
+	"github.com/sebkaluzny/uniswap-sdk-go/utils"
 )
 
 /**
