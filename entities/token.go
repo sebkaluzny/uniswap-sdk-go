@@ -15,33 +15,13 @@ var (
 	ErrDiffToken   = fmt.Errorf("diff token")
 	ErrSameAddrss  = fmt.Errorf("same address")
 
-	_WETHCurrency, _ = newCurrency(constants.Decimals18, "WETH", "Wrapped Ether")
+	_WETHCurrency, _ = newCurrency(constants.Decimals18, "WBNB", "Wrapped BNB")
 
 	WETH = map[constants.ChainID]*Token{
 		constants.Mainnet: {
 			Currency: _WETHCurrency,
 			ChainID:  constants.Mainnet,
-			Address:  utils.ValidateAndParseAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"),
-		},
-		constants.Ropsten: {
-			Currency: _WETHCurrency,
-			ChainID:  constants.Ropsten,
-			Address:  utils.ValidateAndParseAddress("0xc778417E063141139Fce010982780140Aa0cD5Ab"),
-		},
-		constants.Rinkeby: {
-			Currency: _WETHCurrency,
-			ChainID:  constants.Rinkeby,
-			Address:  utils.ValidateAndParseAddress("0xc778417E063141139Fce010982780140Aa0cD5Ab"),
-		},
-		constants.Goerli: {
-			Currency: _WETHCurrency,
-			ChainID:  constants.Goerli,
-			Address:  utils.ValidateAndParseAddress("0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6"),
-		},
-		constants.Kovan: {
-			Currency: _WETHCurrency,
-			ChainID:  constants.Kovan,
-			Address:  utils.ValidateAndParseAddress("0xd0A1E359811322d97991E03f863a0C30C2cF029C"),
+			Address:  utils.ValidateAndParseAddress("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"),
 		},
 	}
 )
