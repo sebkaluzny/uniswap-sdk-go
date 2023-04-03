@@ -47,7 +47,7 @@ var (
 
 	B100  = big.NewInt(100)
 	B997  = big.NewInt(9975)
-	B1000 = big.NewInt(1000)
+	B1000 = big.NewInt(10000)
 )
 
 type SolidityType string
