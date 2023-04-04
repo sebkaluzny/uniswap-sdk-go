@@ -122,7 +122,7 @@ func (f *Fraction) ToSignificant(significantDigits uint, opt ...number.Option) s
 	f.opts = number.New(number.WithGroupSeparator('\xA0'), number.WithRoundingMode(constants.RoundHalfUp))
 	f.opts.Apply(opt...)
 
-	d := decimal.NewFromBigInt(f.Numerator, 0).Div(decimal.NewFromBigInt(f.Denominator, 0))
+	d := decimal.NewFromBigInt(f.Numerator, 0).DivRound(decimal.NewFromBigInt(f.Denominator, 0), 22)
 	if d.LessThan(decimal.New(1, 0)) {
 		significantDigits += countZerosAfterDecimalPoint(d.String())
 	}
